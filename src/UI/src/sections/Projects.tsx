@@ -1,5 +1,10 @@
 import Project from "../components/Project";
 import BookStore_img from "../project-img/BookStore.png";
+import Net_icon from "../icons/NET.png";
+import React_icon from "../icons/React.png";
+import Tailwind_icon from "../icons/Tailwind.png";
+import Typescript_icon from "../icons/Tailwind.png";
+import SQL_icon from "../icons/SQL.png";
 
 const Projects = () => {
   return (
@@ -13,7 +18,7 @@ const Projects = () => {
           project_tags={[
             {
               text: ".NET",
-              icon_src: "NET",
+              icon_src: Net_icon,
               icon_alt: ".NET_icon",
             },
             {
@@ -24,30 +29,25 @@ const Projects = () => {
             },
             {
               text: "React",
-              icon_src: "React",
+              icon_src: React_icon,
               icon_alt: "ReactJS_icon",
             },
             {
               text: "Tailwind CSS",
-              icon_src: "Tailwind",
+              icon_src: Tailwind_icon,
               icon_alt: "TailwindCSS_icon",
             },
             {
               text: "Typescript",
-              icon_src: "Typescript",
+              icon_src: Typescript_icon,
               icon_alt: "Typescript_icon",
             },
             {
               text: "SQL",
-              icon_src: "SQL",
+              icon_src: SQL_icon,
               icon_alt: "SQL_icon",
             },
-          ].map((v) => {
-            if (v.icon_src != null) {
-              return { ...v, icon_src: "/src/icons/" + v.icon_src + ".png" };
-            }
-            return v;
-          })}
+          ]}
         />
       </div>
     </section>

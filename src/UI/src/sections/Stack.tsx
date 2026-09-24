@@ -17,7 +17,7 @@ const Stack = () => {
       <h4 className="pb-3.75">My Stack:</h4>
       <div>
         <h5>Programming languages:</h5>
-        <div className="flex items-center gap-2.75 pt-1.5">
+        <div className="flex items-center gap-2.75 pt-1.5 flex-wrap">
           <Tag text={"SQL"} icon_src={SQL_icon} icon_alt={"SQL_icon"} />
           <Tag text={".NET"} icon_src={NET_icon} icon_alt={".NET_icon"} />
           <Tag text={"C#"} icon_src={CSharp_icon} icon_alt={"C#_icon"} />
@@ -31,7 +31,7 @@ const Stack = () => {
       </div>
       <div>
         <h5>Frontend:</h5>
-        <div className="flex items-center gap-2.75 pt-1.5">
+        <div className="flex items-center gap-2.75 pt-1.5 flex-wrap">
           <Tag text={"React"} icon_src={React_icon} icon_alt={"ReactJS_icon"} />
           <Tag
             text={"Tailwind CSS"}
@@ -44,7 +44,7 @@ const Stack = () => {
       </div>
       <div>
         <h5>Backend:</h5>
-        <div className="flex items-center gap-2.75 pt-1.5">
+        <div className="flex items-center gap-2.75 pt-1.5 flex-wrap">
           <Tag text={".NET"} icon_src={NET_icon} icon_alt={".NET_icon"} />
           <Tag text={"Rest APIs"} />
           <Tag text={"Entity Framework"} />
@@ -53,7 +53,7 @@ const Stack = () => {
       </div>
       <div>
         <h5>Cloud / Infrastructure:</h5>
-        <div className="flex items-center gap-2.75 pt-1.5">
+        <div className="flex items-center gap-2.75 pt-1.5 flex-wrap">
           <Tag text={"Azure"} icon_src={Azure_icon} icon_alt={"Azure_icon"} />
           <Tag
             text={"Azure DevOps"}
