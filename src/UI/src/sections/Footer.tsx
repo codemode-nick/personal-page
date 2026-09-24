@@ -28,8 +28,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <a href="https://github.com/codemode-nick/personal-page">
-            Website Link on Github
+          <a href="https://github.com/codemode-nick/personal-page" className="">
+            <span className="hidden sm:inline">Website Link on Github</span>
+            <span className="sm:hidden">Website Link</span>
           </a>
           <div>
             <a href="https://github.com/codemode-nick/personal-page">

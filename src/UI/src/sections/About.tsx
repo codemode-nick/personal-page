@@ -19,8 +19,8 @@ const About = () => {
         <h4>Web Dev enthusiast 🧑‍💻</h4>
       </div>
       <div className="w-full h-px bg-white"></div>
+      <p className="py-1.5">Computer Science Student & Software Developer</p>
       <p className="py-1.5">
-        Computer Science Student & Software Developer <br />
         Computer Science student at TUM with some experience building web
         applications and backend systems. Interested in software engineering,
         cloud technologies, and AI.

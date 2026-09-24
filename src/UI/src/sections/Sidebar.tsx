@@ -7,23 +7,46 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="group fixed top-0 right-0 z-50 h-screen w-8">
-      <aside
-        className="absolute top-1/2 right-0 w-36 -translate-y-1/2 translate-x-26.25 rounded-l-2xl bg-[#6f6f6f] py-8 transition-transform duration-400 ease-out group-hover:translate-x-0 border-l border-y
-        "
-      >
-        <nav className="flex flex-col items-center gap-3">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="flex h-8 w-20 items-center justify-center rounded-sm bg-[#d9d9d9] text-xs font-medium text-black shadow-[0_1px_2px_rgba(0,0,0,0.3)] transition-all duration-600  hover:bg-white hover:-translate-x-1"
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
-      </aside>
+    <div className="fixed top-0 right-0 z-50 p-4 sm:p-6">
+      <div className="hidden sm:block">
+        <div className="group fixed top-0 right-0 z-50 h-screen w-8">
+          <aside className="absolute top-1/2 right-0 w-36 -translate-y-1/2 translate-x-26.25 rounded-l-2xl bg-[#6f6f6f] py-8 transition-transform duration-400 ease-out group-hover:translate-x-0 border-l border-y">
+            <nav className="flex flex-col items-center gap-3 px-2">
+              {links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="flex h-8 w-20 items-center justify-center rounded-sm bg-[#d9d9d9] text-xs font-medium text-black shadow-[0_1px_2px_rgba(0,0,0,0.3)] transition-all duration-600  hover:bg-white hover:-translate-x-1"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </nav>
+          </aside>
+        </div>
+      </div>
+      <div className="sm:hidden relative">
+        <input id="burger-toggle" type="checkbox" className="hidden peer" />
+        <label
+          htmlFor="burger-toggle"
+          className="flex h-10 w-10 items-center justify-center rounded-md bg-[#d9d9d9] text-black"
+        >
+          ☰
+        </label>
+        <div className="absolute right-0 mt-2 w-40 origin-top-right rounded-md bg-[#6f6f6f] shadow-lg transform scale-y-0 peer-checked:scale-y-100 transition-transform duration-200 ease-out overflow-hidden">
+          <nav className="flex flex-col p-2">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="py-2 px-3 rounded text-sm text-white hover:bg-[#5e5e5e]"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </div>
     </div>
   );
 };

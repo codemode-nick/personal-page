@@ -51,7 +51,7 @@ const Projects = () => {
         />
         <Project
           image_src={BookStore_img}
-          link={"google.com"}
+          link={"https://github.com/NickPraktikum/BookStore"}
           project_name={"Book store simulation"}
           project_tags={[
             {
