@@ -17,7 +17,12 @@ const Footer = () => {
             </div>
             <div className="w-5 h-5">
               <a href="https://www.linkedin.com/in/mykola-sidenko-a0006243a/">
-                <img src={linkedIn_Icon} alt="linkedIn" />
+                <img src={linkedIn_Icon} alt="linkedIn_icon" />
+              </a>
+            </div>
+            <div className="w-5 h-5">
+              <a href="https://github.com/codemode-nick/">
+                <img src={Github_Icon} alt="github_icon" />
               </a>
             </div>
           </div>
