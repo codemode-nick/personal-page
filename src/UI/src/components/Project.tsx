@@ -10,7 +10,7 @@ const Project: FunctionComponent<IProjectArguments> = ({
   project_tags,
 }) => {
   return (
-    <div className="w-full sm:w-72 bg-[#623697] overflow-hidden rounded-[7px] transition-all duration-300 drop-shadow-md drop-shadow-black/70 hover:bg-[#3a2058]">
+    <div className="w-full sm:w-72 lg:w-66.25 bg-[#623697] overflow-hidden rounded-[7px] transition-all duration-300 drop-shadow-md drop-shadow-black/70 hover:bg-[#3a2058]">
       <img
         src={image_src}
         alt={project_name + " project"}
