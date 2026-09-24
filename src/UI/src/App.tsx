@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./sections/About";
+import Footer from "./sections/Footer";
 import Hobby from "./sections/Hobby";
 import Projects from "./sections/Projects";
 import Sidebar from "./sections/Sidebar";
@@ -15,6 +16,7 @@ const App = () => {
           <Stack />
           <Hobby />
           <Projects />
+          <Footer />
         </div>
       </div>
     </>
