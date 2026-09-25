@@ -3,6 +3,7 @@ import profileImage from "../img/profile-image.jpg";
 import TumIcon from "../icons/TUM.png";
 import AIIcon from "../icons/AI.png";
 import CloudIcon from "../icons/Cloud.png";
+import RoboticsIcon from "../icons/Robotics.png";
 
 const About = () => {
   return (
@@ -29,6 +30,11 @@ const About = () => {
         <Tag text={"TUM"} icon_src={TumIcon} icon_alt={"TUM_icon"} />
         <Tag text={"AI"} icon_src={AIIcon} icon_alt={"AI_icon"} />
         <Tag text={"Cloud"} icon_src={CloudIcon} icon_alt={"Cloud_icon"} />
+        <Tag
+          text={"Robotics"}
+          icon_src={RoboticsIcon}
+          icon_alt={"Robotics_icon"}
+        />
       </div>
     </section>
   );
