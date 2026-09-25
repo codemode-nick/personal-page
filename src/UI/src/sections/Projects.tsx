@@ -3,7 +3,7 @@ import BookStore_img from "../project-img/BookStore.png";
 import Net_icon from "../icons/NET.png";
 import React_icon from "../icons/React.png";
 import Tailwind_icon from "../icons/Tailwind.png";
-import Typescript_icon from "../icons/Tailwind.png";
+import Typescript_icon from "../icons/Typescript.png";
 import SQL_icon from "../icons/SQL.png";
 
 const Projects = () => {
