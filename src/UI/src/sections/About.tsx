@@ -24,7 +24,7 @@ const About = () => {
       <p className="py-1.5">
         Computer Science student at TUM with some experience building web
         applications and backend systems. Interested in software engineering,
-        cloud technologies, and AI.
+        cloud technologies, robotics, and AI.
       </p>
       <div className="flex items-center justify-start gap-2.75 mt-2">
         <Tag text={"TUM"} icon_src={TumIcon} icon_alt={"TUM_icon"} />
