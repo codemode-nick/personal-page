@@ -4,6 +4,7 @@ import TumIcon from "../icons/TUM.png";
 import AIIcon from "../icons/AI.png";
 import CloudIcon from "../icons/Cloud.png";
 import RoboticsIcon from "../icons/Robotics.png";
+import XRIcon from "../icons/XR.png";
 
 const About = () => {
   return (
@@ -35,6 +36,7 @@ const About = () => {
           icon_src={RoboticsIcon}
           icon_alt={"Robotics_icon"}
         />
+        <Tag text={"XR"} icon_src={XRIcon} icon_alt={"XR_icon"} />
       </div>
     </section>
   );
